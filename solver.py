@@ -19,7 +19,7 @@ class Solver:
                 word = word.strip()
                 if l not in word:
                     continue
-                else l in word:
+                else:
                     self.possibleWords[l][6].add(word)
                 if word[0] == l:
                     self.possibleWords[l][1].add(word)
