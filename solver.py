@@ -17,7 +17,9 @@ class Solver:
         for l in string.ascii_lowercase:
             for word in allowedWords:
                 word = word.strip()
-                if l in word:
+                if l not in word:
+                    continue
+                else l in word:
                     self.possibleWords[l][6].add(word)
                 if word[0] == l:
                     self.possibleWords[l][1].add(word)
