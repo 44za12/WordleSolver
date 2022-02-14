@@ -51,7 +51,7 @@ class Solver:
     def solve(self) -> None:
         nextTry = "soare"
         tries = 1
-        print("Enter letter with position use 0 for letter not found (grey colored) and 6 for letter misplaced (yellow colored) and the position 1-5 for correctly placed letters (green colored), don't repeat the letters once submitted for example: if you try \"soare\" and \"s, e\" were colored grey, \"o, a\" were colored yellow and \"r\" was colored green, enter \"s0 e0 o6 a6 r4\". The order doesn't matter!\n")
+        print("Enter space separated pair of letter and position use 0 for letters that were not found from your try (grey / black colored) and 6 for the letters that were found but are misplaced (yellow colored) for example: if you try \"soare\" and \"s, e\" were colored grey, \"o, a\" were colored yellow and \"r\" was colored green in the response, enter \"s0 e0 o6 a6 r4\" in the program. The order doesn't matter!\n")
         while tries <= 6:
             out = input(f"\nTry the word \"{nextTry}\".\nInput the response from Wordle in the mentioned format: ")
             if out == "done":
